@@ -19,6 +19,12 @@ export default function Home() {
   const sendEmail = (e: any) => {
     e.preventDefault();
     send({email, firstName, lastName, message, source})
+
+    setEmail('')
+    setFirstName('')
+    setLastName('')
+    setMessage('')
+    setSource('')
   }
 
   return (
